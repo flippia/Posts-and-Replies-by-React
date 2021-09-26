@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "authorName": "Tan",
+      "authorEmail": "tango123@gmail.com",
+      "freeTextArea": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident iure eveniet ex labore, ipsum ipsam error incidunt officia odio modi corporis optio qui, commodi reiciendis ullam quisquam unde! Minus repellat, aspernatur suscipit sed veniam deleniti nisi eos maxime ducimus magni!",
+      "id": 1
+    },
+    {
+      "authorName": "Flippia",
+      "authorEmail": "flippia@gmail.com",
+      "freeTextArea": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas porro incidunt voluptas rerum, necessitatibus illum similique quos odio perferendis magnam.",
+      "id": 2
+    },
+    {
+      "authorName": "Croissant",
+      "authorEmail": "croissant2021@google.com",
+      "freeTextArea": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est recusandae harum unde, porro sunt id quis eligendi ad qui minus, exercitationem voluptatum cum, aliquam accusantium reiciendis enim pariatur modi suscipit. Tempora, culpa ducimus sapiente veritatis quo possimus alias, ad maxime dicta quidem, beatae quaerat.",
+      "id": 3
+    }
+  ],
+  "replies": [
+    {
+      "postID": 1,
+      "authorName": "Tan",
+      "authorEmail": "tango123@gmail.com",
+      "freeTextArea": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ullam et itaque.",
+      "id": 1
+    },
+    {
+      "postID": 1,
+      "authorName": "Croissant",
+      "authorEmail": "croissant2021@google.com",
+      "freeTextArea": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+      "id": 2
+    },
+    {
+      "postID": 3,
+      "authorName": "Croissant",
+      "authorEmail": "croissant2021@google.com",
+      "freeTextArea": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui inventore consequatur fugit veritatis eius quis suscipit.",
+      "id": 3
+    }
+  ]
+}
