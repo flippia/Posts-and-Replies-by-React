@@ -20,11 +20,15 @@
 .post-details button {
     font-size: 1.3rem;
     margin: 1rem 0;
-    background: #f1356d;
-    color: #fff;
+    background-color: antiquewhite;
     border: 0;
     padding: 0.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: 200ms;
 }
   
+.post-details button:hover{
+    background: #f1356d;
+    color: #fff;
+}
