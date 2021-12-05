@@ -8,7 +8,7 @@ const Post = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch('http://localhost:8000/posts/' + id)
+        fetch('https://intense-waters-27320.herokuapp.com/posts/' + id)
             .then(res => {
                 return res.json();
             })
@@ -19,7 +19,7 @@ const Post = () => {
     },[]);
 
     const handleDelete = () => {
-        fetch('http://localhost:8000/posts/' + post.id, {
+        fetch('https://intense-waters-27320.herokuapp.com/posts/' + post.id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');
