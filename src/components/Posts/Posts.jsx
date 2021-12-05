@@ -81,17 +81,17 @@ const Posts = ({allPosts, posts, setIsSent, setPosts, replies}) => {
                         < Reply id={post.id} setIsSent={setIsSent} />
                         <div className="buttons">                            
                             <button onClick={() => {
-                                fetch('http://localhost:8000/posts/' + post.id, {
+                                fetch('https://intense-waters-27320.herokuapp.com/posts/' + post.id, {
                                 method: 'DELETE'
                                 })
                                 .then(() => {
-                                    fetch('http://localhost:8000/replies')
+                                    fetch('https://intense-waters-27320.herokuapp.com/replies')
                                     .then(res => {
                                         return res.json();
                                     })
                                     .then(data => {
                                         data.filter(replies => replies.postID === post.id).forEach(reply => {
-                                            fetch('http://localhost:8000/replies/' + reply.id, {
+                                            fetch('https://intense-waters-27320.herokuapp.com/replies/' + reply.id, {
                                             method: 'DELETE'
                                             })
                                         });
