@@ -10,7 +10,7 @@ const Home = () => {
     const [ replies, setReplies ] = useState(null);
 
     useEffect(() => {
-        fetch('https://intense-waters-27320.herokuapp.com/posts')
+        fetch('https://flippia-api.herokuapp.com/posts')
             .then(res => {
                 return res.json();
             })
@@ -19,7 +19,7 @@ const Home = () => {
                 setPosts(data);
                 setAllPosts(data);
             });
-        fetch('https://intense-waters-27320.herokuapp.com/replies')
+        fetch('https://flippia-api.herokuapp.com/replies')
             .then(res => {
                 return res.json();
             })
