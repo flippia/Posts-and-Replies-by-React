@@ -12,7 +12,7 @@ const CreatePost = () => {
         e.preventDefault();
         const post = { authorName:author, authorEmail:email, freeTextArea:body };
 
-        fetch('https://intense-waters-27320.herokuapp.com/posts/', {
+        fetch('https://flippia-api.herokuapp.com/posts', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(post)
