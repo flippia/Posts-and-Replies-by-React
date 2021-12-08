@@ -10,7 +10,7 @@ const Reply = ({id, setIsSent}) => {
         e.preventDefault();
         const reply = { authorName: author, authorEmail: email, freeTextArea: body, postID: id };
         if( author!=='' && email!=='' && body!=="" ){
-            fetch('https://intense-waters-27320.herokuapp.com/replies', {
+            fetch('https://flippia-api.herokuapp.com/replies', {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(reply)
