@@ -81,17 +81,17 @@ const Posts = ({allPosts, posts, setIsSent, setPosts, replies}) => {
                         < Reply id={post.id} setIsSent={setIsSent} />
                         <div className="buttons">                            
                             <button onClick={() => {
-                                fetch('https://intense-waters-27320.herokuapp.com/posts/' + post.id, {
+                                fetch('https://flippia-api.herokuapp.com/posts/' + post.id, {
                                 method: 'DELETE'
                                 })
                                 .then(() => {
-                                    fetch('https://intense-waters-27320.herokuapp.com/replies')
+                                    fetch('https://flippia-api.herokuapp.com/replies')
                                     .then(res => {
                                         return res.json();
                                     })
                                     .then(data => {
                                         data.filter(replies => replies.postID === post.id).forEach(reply => {
-                                            fetch('https://intense-waters-27320.herokuapp.com/replies/' + reply.id, {
+                                            fetch('https://flippia-api.herokuapp.com/replies/' + reply.id, {
                                             method: 'DELETE'
                                             })
                                         });
